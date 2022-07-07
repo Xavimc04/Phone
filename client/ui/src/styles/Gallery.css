@@ -1,0 +1,143 @@
+.gallery-container {
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(49, 49, 49); 
+    border-radius: 7px;
+    box-shadow: inset 0px 0px 15px rgb(1, 1, 1);
+    color: white;
+}
+
+.image-scrolldown {
+    position: absolute;
+    width: 90%;
+    height: 83%;
+    margin-left: 5%;
+    margin-top: 13%;
+    -ms-overflow-style: none;   
+    scrollbar-width: none; 
+    overflow-y: scroll;  
+}
+
+.image-scrolldown::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-container .svg { 
+    position: absolute;
+    fill: whitesmoke;
+    height: 15px;
+    bottom: 5%;
+    left: 50%; 
+    transform: translate(-50%);
+    margin-top: 3%;
+    margin-right: 2%;
+    opacity: 0.6;
+}
+
+.gallery-container .svg:hover {
+    opacity: 1;
+}
+
+.image-container {
+    margin-top: 15px;
+    width: 100%;
+    height: 70px;   
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.image-container img { 
+    margin-top: 6.5%;
+    margin-left: 3.5%;
+    height: 40px;
+    width: 40px;
+    border-radius: 2px;
+}
+
+.image-container .date {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 10px;
+    font-size: .9rem;
+    color: white;
+    opacity: .7;
+}
+
+.image-container .name {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 10px;
+    font-size: .85rem;
+    color: white;
+}
+
+.preview-image {
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    color: white;
+}
+
+.preview-image .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 250px;
+    max-height: 300px; 
+}
+
+.preview-image .input {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border: none;
+    padding-top: 7px; 
+    background-color: transparent; 
+    padding-bottom: 7px;
+    opacity: .7;
+    color: white;
+    font-family: boxed;
+    font-size: .7rem;
+    text-align: center;
+}
+
+.preview-image .input:focus {
+    outline: none;
+    opacity: 1;
+}
+
+.gallery-svgs {
+    position: absolute;
+    top: 90.7%;
+    left: 50%;  
+    width: 50%; 
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(-50%, -50%);
+}
+
+.preview-image .svg-action {
+    fill: white;
+    height: 15px;
+    padding: 5px; 
+    opacity: .5;
+}
+
+.gallery-svgs .svg-action {
+    fill: white;
+    height: 15px;
+    padding: 5px; 
+    opacity: .5;
+}
+
+.gallery-svgs .svg-action:hover {
+    opacity: 1;
+}

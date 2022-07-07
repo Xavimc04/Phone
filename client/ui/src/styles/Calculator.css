@@ -1,0 +1,73 @@
+.calculatorContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.calculatorContainer .codeNumbers {
+    position: absolute; 
+    top: 60%;
+    left: 50%;
+    width: 75%; 
+    height: 50%; 
+    text-align: center;  
+    transform: translate(-50%, -50%); 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.calculatorContainer input {
+    position: absolute; 
+    top: 25%;
+    left: 50%;
+    width: 70%;
+    border: none;
+    font-size: 2.5rem;  
+    background-color: transparent; 
+    text-align: center;  
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    transform: translate(-50%, -50%);  
+    user-select: none;
+}
+
+.calculatorContainer input:focus {
+    outline: none;
+    user-select: none;
+}
+
+.calculatorContainer .codeNumbers div {
+    position: relative;
+    width: 26%;
+    background-color: rgba(255, 144, 25, 0.841);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    margin-top: 5%;
+    transition: .3s;
+}
+
+.calculatorContainer .codeNumbers div:hover {
+    opacity: .8;
+    transform: scale(.95);
+    transition: .3s;
+}
+
+.calculatorContainer .codeNumbers span {
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    transform: translate(-50%, -50%);  
+}
+
+.calculatorContainer .codeNumbers span svg {  
+    margin-top: 5px;
+    fill: white;
+    text-shadow: 0px 0px 10px black; 
+    height: 20px;  
+}

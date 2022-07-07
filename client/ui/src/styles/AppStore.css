@@ -1,0 +1,84 @@
+.store {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgb(47, 57, 68);
+}
+
+.store .header {
+    position: relative;
+    height: 15%;
+    width: 90%;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+.header label {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    color: rgb(47, 57, 68);
+    opacity: .7;
+    font-size: .8rem;
+    transform: translate(-50%, -50%);  
+}
+
+.header span {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    color: rgb(47, 57, 68);
+    font-size: 1.2rem;
+    font-weight: 900;
+    transform: translate(-50%, -50%);  
+}
+
+.store .apps {
+    position: absolute;
+    height: 70%;
+    width: 90%;
+    top: 60%;
+    border-radius: 8px; 
+    overflow-y: scroll;
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+}
+
+.store .apps div {
+    position: relative; 
+    background-color: rgb(32, 87, 109);
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.store .apps div svg {
+    position: absolute;
+    height: 20px; 
+    top: 50%; 
+    left: 5%;
+    transform: translate(0, -50%);
+    fill: white;
+}
+
+.store .apps div .iconRight {
+    left: 85%;
+} 
+
+.store .apps div label {
+    position: absolute; 
+    top: 50%; 
+    left: 20%;
+    text-transform: uppercase;
+    font-size: .7rem;
+    transform: translate(0, -50%);
+    color: white;
+}
+
+.store .apps::-webkit-scrollbar {
+    display: none;
+}

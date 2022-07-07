@@ -1,0 +1,159 @@
+.bankContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgb(47, 57, 68);
+}
+
+.bankContainer .login {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    height: 40%;  
+    width: 80%; 
+    transform: translate(-50%, -50%);
+}
+
+.bankContainer .login div {
+    width: 100%; 
+    text-align: center;
+    color: white;
+    padding-bottom: 15%;
+}
+
+.bankContainer .login span {
+    color: greenyellow;
+}
+
+.bankContainer .login input {
+    position: relative;
+    left: 50%;
+    margin-top: 3%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    transform: translate(-50%);
+    transition: .3s;
+}
+
+.bankContainer .login input:focus {
+    outline: none;
+    transition: .3s;
+    border-bottom: 1px solid greenyellow;
+}
+
+.bankContainer .login button {
+    position: relative;
+    top: 80%;
+    left: 50%;
+    height: 20%;  
+    width: 80%; 
+    background-color: transparent;
+    border: none;
+    color: white;
+    opacity: .7;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    border-bottom: 1px solid transparent;
+}
+
+.bankContainer .login button:hover {
+    color: yellowgreen;
+    opacity: 1;
+    border-bottom: 1px solid yellowgreen;
+    transition: .5s;
+}
+
+.bankContainer .card {
+    height: 20%;
+    width: 80%;
+    background-color: rgb(178, 224, 87);
+    box-shadow: inset 0px 0px 30px yellowgreen;
+    border-radius: 5px;
+    position: relative;
+    top: 20%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.bankContainer .card .iban {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: .85rem; 
+    color: rgb(97, 97, 97);
+}
+
+.bankContainer .card .iban span {
+    color: rgb(47, 57, 68);
+    text-transform: uppercase;
+}
+
+
+.bankContainer .card .balance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem; 
+    color: rgb(27, 28, 82);
+    font-weight: 900;
+}
+
+.bankContainer .card .balance span {
+    color: white;
+    font-size: .9rem;
+    margin-left: 5px;
+    text-shadow: 0px 0px 5px rgb(47, 57, 68);
+}
+
+.bankContainer .transactions {
+    height: 60%;
+    width: 80%; 
+    border-radius: 5px;
+    position: relative;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+.bankContainer .transactions::-webkit-scrollbar {
+    display: none;
+}
+
+.bankContainer .transactions .transaction {
+    position: relative;
+    width: 100%; 
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 60px;
+    transition: .3s;
+}
+
+.bankContainer .transactions .transaction:hover {
+    opacity: .6;
+    transition: .3s;
+}
+
+.bankContainer .transactions .transaction .date {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+.bankContainer .transactions .transaction .string {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}

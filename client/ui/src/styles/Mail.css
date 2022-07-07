@@ -1,0 +1,96 @@
+.mailContainer { 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(38, 49, 82);
+    border-radius: 4px;
+}
+
+.mailContainer .square {
+    position: absolute;
+    height: 50%;
+    width: 90%; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.mailContainer .square .name { 
+    margin-left: 30%;
+    color: white; 
+    font-weight: 900;
+    font-size: 1.3rem; 
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mailContainer .square .name span {
+    color: rgb(214, 125, 236);
+}
+
+.mailContainer input { 
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    margin-top: 25px;
+    width: 70%;
+    text-align: center;
+    color: white;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white; 
+    transition: .3s;
+}
+
+.mailContainer input:focus {
+    outline: none;
+    transition: .3s;
+    border-bottom: 1px solid rgb(214, 125, 236);
+}
+
+.mailContainer button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(214, 125, 236);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    text-shadow: 0px 0px 2px black;
+    opacity: .6;
+    transition: .3s;
+}
+
+.mailContainer button:hover {
+    opacity: 1; 
+    transition: .3s;
+}
+
+.mailContainer .change {
+    position: relative;
+    left: 50%;
+    width: 69%;
+    transform: translate(-50%);
+    margin-top: 70px;
+    color: white;
+    font-size: .7rem;  
+    text-align: justify;
+    word-break: break-all;
+    transition: .3s;
+}
+
+.mailContainer .change:hover {
+    opacity: .6;
+    transition: .3s;
+}

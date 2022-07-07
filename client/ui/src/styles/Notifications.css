@@ -1,0 +1,40 @@
+.notification-container { 
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.925);
+    max-height: 35%;
+    margin-left: 5%;
+    top: 6%;
+    border-radius: 5px; 
+    position: absolute;
+    z-index: 8;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0); 
+    font-size: .7rem;
+}
+
+.notification-container .not-title {
+    margin-left: 1%;
+    color: rgb(0, 0, 0); 
+    padding-top: 2%;
+}
+
+.notification-container .not-title a {
+    color: rgb(89, 33, 219);
+    padding: 2px;
+    border-radius: 2px; 
+}
+
+.notification-container .not-container {
+    margin-left: 1%;
+    color: rgb(0, 0, 0); 
+    margin-top: 1%;
+    padding-bottom: 3%; 
+    width: 98%;  
+    font-size: .6rem;
+    text-align: justify;
+    word-break: break-all;  
+}
+
+
+.notification-container .not-container::-webkit-scrollbar {
+    display: none;  
+}

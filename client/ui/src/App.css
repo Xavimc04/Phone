@@ -1,0 +1,394 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;  
+    position: fixed;  
+}
+
+* {
+    user-select: none;
+    cursor: pointer; 
+}
+
+.container {
+    position: fixed;
+    font-family: boxed;
+    user-select: none;
+    cursor: pointer;
+    height: 500px;
+    width: 250px;
+    bottom: 2.886%;
+    right: 1%;
+    background-color: black;  
+    border-radius: 7px; 
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.container-inCall {
+    position: fixed;
+    font-family: boxed;
+    user-select: none;
+    cursor: pointer;
+    height: 100px;
+    width: 250px;
+    bottom: 0;
+    right: 1%; 
+    background-color: black;  
+    border-radius: 7px 7px 0px 0px; 
+    background-repeat: no-repeat;
+    background-size: cover;  
+    border: 3px solid black;
+    border-bottom: 0px;
+}
+
+.callContainer {
+    position: relative;
+    height: 80%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.748);
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.callContainer img {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    border-radius: 50%;
+}
+
+.callContainer label {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-size: .8rem;
+    text-transform: uppercase;
+    opacity: .6;
+    transform: translate(-50%, -50%); 
+}
+
+.callContainer div {
+    position: absolute;
+    top: 60%;
+    left: 31%;
+    color: white;
+    font-size: 1rem; 
+    width: 50%;
+    text-transform: uppercase; 
+    transform: translate(0, -50%); 
+}
+
+.lockScreen {
+    height: 100%;
+    width: 100%; 
+    border-radius: 7px;
+}
+
+.lockScreen .lock {
+    position: absolute; 
+    top: 15%;
+    left: 50%;
+    width: 100%; 
+    height: 20px;
+    text-align: center;
+    fill: white;
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 0.4));
+    transform: translate(-50%); 
+}
+
+.lockScreen .codeNumbers {
+    position: absolute; 
+    top: 60%;
+    left: 50%;
+    width: 75%; 
+    height: 40%;
+    text-align: center;  
+    transform: translate(-50%, -50%); 
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lockScreen input {
+    position: absolute; 
+    top: 33%;
+    left: 50%;
+    width: 70%;
+    border: none;
+    font-size: 2rem;  
+    background-color: transparent;
+    text-align: center;  
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    transform: translate(-50%, -50%);  
+    user-select: none;
+}
+
+.lockScreen input:focus {
+    outline: none;
+    user-select: none;
+}
+
+.lockScreen .codeNumbers div {
+    position: relative;
+    width: 26%;
+    background-color: rgba(128, 128, 128, 0.841);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    margin-top: 5%;
+    transition: .3s;
+}
+
+.lockScreen .codeNumbers div:hover {
+    opacity: .8;
+    transform: scale(.95);
+    transition: .3s;
+}
+
+.lockScreen .codeNumbers span {
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    transform: translate(-50%, -50%);  
+}
+
+.lockScreen .codeNumbers span svg {  
+    margin-top: 5px;
+    fill: white;
+    text-shadow: 0px 0px 10px black; 
+    height: 20px;  
+}
+
+.lockScreen .swipe {
+    position: absolute; 
+    bottom: 3%;
+    left: 50%;
+    width: 100%; 
+    font-size: .8rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    transform: translate(-50%); 
+}
+
+.app-container {
+    position: absolute;
+    height: 15%;
+    width: 95%; 
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%); 
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary-app-container {
+    width: 100%;
+    height: 90%;
+    margin-top: 15%; 
+    font-family: boxed;
+    display:flex; 
+    align-content: flex-start; 
+    flex-wrap: wrap; 
+    row-gap: 2%; 
+}
+
+.secondary-app-container .app-square {
+    width: 25%; 
+    margin: 0;
+    height: 10%;
+}
+
+.app-square {
+    position: relative;  
+    height: 80%;
+    width: 80%; 
+    justify-content: space-evenly;
+    transition: .3s;
+}
+
+.app-icon svg { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%; 
+    border-radius: 15px;
+    padding: 20%; 
+}
+
+.app-square:hover {
+    transform: scale(0.90);
+    transition: .3s;
+}
+
+.header-info {  
+    position: absolute;
+    color: white; 
+    width: 100%;
+    z-index: 9;
+    text-shadow: 0px 0px 5px black;
+    display: flex; 
+}
+
+.header-info .center-icons { 
+    height: 70%;
+    width: 20%; 
+    display: flex;
+    margin-left: 2%; 
+    flex-direction: row; 
+    padding-top: 2%;  
+}
+
+.header-info .center-icons svg {  
+    margin-left: 8%;   
+    fill: white;  
+    width: 23%;
+    filter: drop-shadow(0px 0px 3px rgb(0 0 0 / .8));
+}
+
+.header-info .right {
+    position: absolute; 
+    right: 2%; 
+    font-size: .7rem;
+    margin-top: 4px; 
+    border: 1px solid white; 
+    box-shadow: 0px 0px 2px black;
+    border-radius: 2px; 
+    width: 20px;
+}
+
+.header-info .right .percent {
+    height: 7px; 
+    background-color: white; 
+    border-radius: 0px;
+    box-shadow: 0px 0px 2px black;
+}
+
+.header-info .date { 
+    font-size: .7rem;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+.hotbar-container {
+    position: absolute; 
+    width: 100%;
+    height: 1%;
+    bottom: 1%;
+    display: flex;
+    z-index: 9;
+    justify-content: center;
+}
+
+.hotbar-container .hotbar {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    z-index: 6;
+}
+
+.hotbar-container .hotbar:hover {  
+    opacity: .7; 
+}
+
+@font-face {
+	font-family: boxed;
+	src: url('./styles/fonts/boxed.ttf');
+}
+
+.calling-handler {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    top: 0;
+    background-color: rgb(29, 29, 29);
+    z-index: 7;
+    margin: 0;
+}
+
+.calling-handler .caller-name {
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    font-size: 1.1rem;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.calling-handler img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.calling-handler .icons {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%); 
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.calling-handler .icons svg {
+    fill: white;
+    height: 25px;
+    padding: 10px; 
+}
+
+.calling-handler .icons svg:hover {
+    opacity: .7;
+}
+
+.calling-handler .wave {
+    position: absolute;
+    top: 0;
+    transform: rotate(-180deg);
+    z-index: -1;
+    width: 100%;
+    opacity: .3;
+}
+
+.chase {
+    position: absolute;
+    height: 507px;
+    width: 258px;
+    bottom: 2.50%;
+    right: 0.76%;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/* Iframe */
+.frame {
+    position: relative; 
+    height: 100%;
+}
+
+.iframe {
+    filter: brightness(.75);
+    display: block;
+    position: relative; 
+    border: none;
+    border-radius: 7px;  
+}  

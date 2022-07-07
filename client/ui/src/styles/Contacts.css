@@ -1,0 +1,216 @@
+.contacts-container {
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35, 35, 35); 
+    border-radius: 5px;
+    color: white;
+}
+
+.contacts-container .svg { 
+    position: absolute;
+    fill: white;
+    height: 15px;
+    right: 0;
+    margin-top: 14%;
+    margin-right: 4%;
+    z-index: 2;
+}
+
+.cont-app-label {
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 13%;
+    font-size: .8rem;
+    color: white; 
+    z-index: 2;
+}
+
+.contacts-scroll { 
+    position: absolute;
+    width: 90%;
+    height: 80%; 
+    margin-left: 5%;
+    margin-top: 25%;
+    -ms-overflow-style: none;   
+    scrollbar-width: none; 
+    overflow-y: scroll;  
+}
+
+.contacts-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.registered-contact {
+    margin-top: 10px;
+    position: relative; 
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 4%;
+    margin: 3%; 
+    opacity: .9;
+}
+
+.registered-contact:hover {
+    opacity: 1;
+}
+
+.registered-contact img { 
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.registered-contact .name {  
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -15.5%;
+    color: white;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+.registered-contact .phone {  
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -7%;
+    opacity: .6;
+    font-size: .7rem;
+}
+
+.registered-contact .actions {
+    position: absolute;
+    right: 0;
+    margin-top: -10%;
+    display: flex;
+}
+
+.registered-contact .actions .svg-action { 
+    fill: white;
+    height: 11px;
+    float: right;   
+    margin-right: 10px;
+    opacity: .7;
+}
+
+.registered-contact .actions .svg-action:hover { 
+    opacity: 1; 
+}
+
+.create-new-container {
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: #000000ae;
+    border-radius: 5px;
+    color: white;
+    font-size: .7rem;
+}
+
+.create-new-container .fieldset-name {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.create-new-container .fieldset-phone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.create-new-container fieldset {
+    border-radius: 5px;
+}
+
+.create-new-container fieldset input {
+    background-color: transparent;
+    color: white;
+    width: 95%;
+    font-size: .7rem;
+    border: none;
+}
+
+.create-new-container fieldset input:focus {
+    outline: none;
+}
+
+.create-new-container fieldset input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.create-new-container .button {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    width: 77%;
+    transform: translate(-50%, -50%); 
+    padding: 8px 0px 8px 0px; 
+    border: none;
+    border-radius: 4px;  
+    font-family: boxed;
+    background-color: white;
+    box-shadow: 0px 0px 5px white;
+    font-size: .7rem;
+    /* opacity: .7; */
+    color: black;
+    transition: .5s;
+}
+
+.create-new-container .button:hover {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px transparent; 
+    color: white; 
+    text-shadow: 0px 0px 2px white;
+    transition: .5s;
+}
+
+.create-new-container .button:nth-of-type(2) {
+    margin-top: 15%;
+}
+
+.my-phone-container {
+    position: absolute;
+    width: 100%;
+    height: 9%;
+    background-color: #114354;
+    bottom: 0;
+    border-radius: 40px 40px 4px 4px;
+}
+
+.my-phone-container .icon {
+    opacity: .7;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 4%;
+    height: 30%;
+    fill: white;
+}
+
+.my-phone-container .icon:hover {
+    opacity: 1;
+}
+
+.my-phone-container .phone-number {
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 3%; 
+    opacity: .7;
+}
+
+.wave-messages {
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;   
+    z-index: 2; 
+}

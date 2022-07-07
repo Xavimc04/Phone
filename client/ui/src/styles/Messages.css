@@ -1,0 +1,514 @@
+.messages-app .chat-main {
+    cursor: pointer;
+    user-select: none;
+    position: absolute; 
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1d1d1d;  
+    box-shadow: inset 0px 0px 30px black;  
+    font-size: .7rem;
+}
+
+.messages-app .chat-main .header { 
+    color: white;
+    height: 10%;
+    margin-top: 15px; 
+    width: 100%;
+    position: absolute;  
+    text-shadow: 0px 0px 5px black;
+    display: flex;
+}
+
+.messages-app .chat-main .header svg { 
+    fill: white; 
+    padding: 7%;  
+}
+
+.messages-app .chat-main .header input {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    opacity: .4;
+    width: 70%;
+    font-size: .7rem;
+    color: white;
+}
+
+.messages-app .chat-main .header input:focus {
+    outline: none;
+    opacity: 1;
+}
+
+.messages-app .chat-main .header img {   
+    float: right;
+    border-radius: 50%;
+    padding: 5%;
+    right: 0;
+    margin-top: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.messages-app .chat-main .messages-scroll { 
+    height: 80%;
+    width: 100%; 
+    margin-top: 30%;
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    overflow-y: scroll;
+}
+
+.messages-app .chat-main .messages-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-user-container {
+    position: relative;
+    background-color: rgb(187, 187, 187); 
+    box-shadow: inset 0px 0px 15px #706e6e;
+    color: black;
+    padding: 4%;
+    margin: 3%;
+    border-radius: 5px; 
+}
+
+.chat-user-container img { 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.chat-user-container .label {  
+    position: absolute;
+    margin-left: 5%; 
+}
+
+.chat-user-container .phone {  
+    position: absolute;
+    margin-left: 5%; 
+    margin-top: 7%;
+    font-size: .6rem;
+    opacity: .7;
+}
+
+.chat-user-container:hover { 
+    background-color: white; 
+}
+
+.chatting input {
+    position: absolute;
+    left: 6%;
+    bottom: 4%;
+    width: 63%;
+    font-size: .7rem;
+    padding: 5px 0px 5px 0px; 
+    background-color: transparent;
+    color: white;
+    border: none; 
+    font-family: boxed;
+}
+
+.chatting input:focus {
+    outline: none;
+}
+
+.chatting button {
+    position: absolute;
+    right: 3%;
+    bottom: 4%;
+    width: 25%;
+    padding: 6.5px 0px 6.5px 0px; 
+    border: none;
+    opacity: .6;
+    background-color: rgb(137, 61, 207);
+    color: white;
+    border-radius: 3px; 
+}
+
+.chatting button:hover { 
+    opacity: 1;
+}
+
+.chatting .message-list { 
+    position: absolute;
+    width: 90%;
+    height: 79%;
+    margin-left: 5%;  
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    overflow-y: scroll;  
+}
+
+.chatting .message-list::-webkit-scrollbar {
+    display: none;
+}
+
+.wave-messages {
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;   
+    z-index: -1;
+}
+
+.left-message .message {
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    float: left;
+}
+
+.left-message {
+    margin-top: 10px; 
+    float: left;
+    color: black; 
+    width: 100%;
+    text-align: left; 
+}  
+
+.left-message .hour {
+    opacity: .7;
+    font-size: .7rem;
+    color: white;
+}
+
+.right-message .hour {
+    opacity: .7;
+    font-size: .7rem;
+}
+
+.left-message .message {
+    margin-top: 5px;
+    font-size: .7rem;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.right-message .message {
+    margin-top: 5px;
+    background-color: rgb(57, 143, 228);
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    font-size: .7rem;
+    text-align: justify;
+    word-break: break-all;
+}
+
+.right-message {
+    margin-top: 10px; 
+    float: right;
+    color: white; 
+    width: 100%;
+    text-align: right; 
+}
+
+.message-header .hd-svg {
+    padding: 5%;
+    fill: white;  
+    width: 10px;
+    opacity: .6;
+    margin-top: 15px
+}
+
+.message-header .hd-svg:hover {
+    opacity: 1;
+}
+
+.message-header .selected {
+    position: absolute;
+    margin-top: 25px;
+    color: white;
+    right: 10px;
+}
+
+.m-svg {
+    width: 12px;
+    fill: white;
+    margin-right: 8px;
+    opacity: .7;
+}
+
+.m-svg:hover {
+    fill: rgb(57, 143, 228);
+    opacity: 1;
+}
+
+.msvgcontainer { 
+    position: absolute;
+    right: 3%;
+    bottom: 4.6%;
+}
+
+.double-check {
+    width: 10px;
+    padding: 0px 5px 0px 5px;
+    fill: rgb(57, 143, 228);  
+}
+
+.messages-app .first-config {
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    background-color: rgba(31, 31, 31, 0.97);
+    border-radius: 0px 0px 5px 5px;
+    font-size: .7rem;
+}
+
+.first-config .fieldset-image {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.first-config .fieldset-name {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.first-config .fieldset-invite-code {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.first-config fieldset {
+    border-radius: 5px;
+    color: white;
+}
+
+.first-config fieldset input {
+    background-color: transparent;
+    color: white;
+    width: 95%;
+    border: none;
+}
+
+.first-config fieldset input:focus {
+    outline: none;
+}
+
+.first-config .button {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 77%;
+    font-size: .7rem;
+    transform: translate(-50%, -50%); 
+    padding: 8px 0px 8px 0px; 
+    border: none;
+    border-radius: 20px; 
+    text-transform: uppercase;
+    font-family: boxed;
+    background-color: rgb(57, 143, 228);
+    color: white;
+    text-transform: uppercase; 
+}
+
+.first-config .button:hover {
+    opacity: .7;
+}
+
+.first-config .button:nth-of-type(2) {
+    margin-top: 15%;
+}
+
+.first-config .button:nth-of-type(3) {
+    margin-top: 30%;  
+}
+
+.messages-app .group-management {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.931);
+    border-radius: 0px 0px 5px 5px; 
+}
+
+.messages-app .group-management .members-scroll { 
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;  
+    margin-top: 15%;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;  
+    overflow-y: scroll;  
+}
+
+.messages-app .group-management .members-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.group-management .member {
+    background-color: rgb(57, 143, 228);
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: inset 0px 0px 4px rgb(102, 164, 225);
+    position: relative;
+}
+
+.group-management .member:hover {
+    opacity: .96;
+}
+
+.group-management .member .iconm {
+    height: 15px;
+    fill: white;
+    margin-top: 4px;
+    position: absolute;
+    right: 5px;
+}
+
+.group-management .member .iconm:hover {
+    fill: rgb(207, 73, 61);
+}
+
+.close-management {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 10px;
+    font-family: boxed;
+    background-color: transparent;
+    color: white;
+    font-size: .9rem;
+    opacity: .4;
+}
+
+.close-management:hover {
+    opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.new {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.931);
+    border-radius: 7px;
+}
+
+.popUp {
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border-radius: 5px;
+    font-size: .7rem;
+}
+
+.popUp input {
+    border: none; 
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 98%;
+    font-size: .7rem;
+    border-radius: 5px;
+    text-align: center;
+    font-family: boxed;
+}
+
+.popUp input:focus {
+    outline: none;
+}
+
+.popUp button {
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: boxed;
+    font-size: .7rem;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: rgb(57, 143, 228);
+    color: white;
+}
+
+.popUp button:hover {
+    opacity: .7;
+}
+
+.mesage-with-image {
+    width: 120px;
+    height: 120px;
+}
+
+.select {
+    cursor: pointer;
+    user-select: none;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753); 
+}
+
+.select .container-select {  
+    position: absolute;
+    color: black;  
+    height: 50%;
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px white;
+    transform: translate(25%, 50%);
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
+    overflow-y: scroll;
+}
+
+.container-select::-webkit-scrollbar {
+    display: none; 
+}
+
+.select-element {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px whitesmoke;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px; 
+    text-align: justify;
+}
+
+.select-element:hover {
+    background-color: #4a56b4;
+    color: white; 
+}
